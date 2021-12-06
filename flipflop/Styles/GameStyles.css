@@ -9,15 +9,17 @@ html {
 
 body {
     margin: 0;
-    background: radial-gradient(green, azure);
+    background: radial-gradient(skyblue, azure);
 }
 
-.game-title {
+.game-title,
+h3,
+img {
     color: darkblue;
     font-family: 'Tangerine', cursive;
     font-weight: bolder;
     text-align: center;
-    font-size: 6em;
+    font-size: 3em;
 }
 
 .game-info-block {

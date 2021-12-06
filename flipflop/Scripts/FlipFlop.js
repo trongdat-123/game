@@ -43,15 +43,15 @@ function init() {
     flipCounter = 0;
     var minutes = 2;
     var display = document.getElementById("Timer");
-    blockFrontImages = ["Images/C1.jpg",
-        "Images/C2.jpg",
-        "Images/C3.jfif",
-        "Images/C4.png",
-        "Images/C5.png",
-        "Images/C6.jpg",
-        "Images/C7.jpg",
-        "Images/C8.jpg",
-        "Images/C9.jpg"
+    blockFrontImages = ["Images/a1.jpg",
+        "Images/a2.jpg",
+        "Images/a3.png",
+        "Images/a4.png",
+        "Images/a5.jfif",
+        "Images/a6.jfif",
+        "Images/a7.png",
+        "Images/a8.gif",
+        "Images/a9.jpg"
     ];
     // init();
     startTimer(minutes, display);
@@ -67,7 +67,7 @@ function createElements() {
     var finalCount = shuffledBlocks.length;
     for (var i = 0; i < finalCount; i++) {
         var cardFront = shuffledBlocks.pop();
-        blockData = new MemoryBlock(i, cardFront, "Images/behind.jpg");
+        blockData = new MemoryBlock(i, cardFront, "Images/unnamed.png");
         memoryBlockArr[i] = blockData;
 
         divblock = document.createElement("div");
