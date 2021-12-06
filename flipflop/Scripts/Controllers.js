@@ -23,7 +23,7 @@ class Tiles {
         this.snake = snake;
         this.ladder = ladder;
         this.next = next;
-}
+    }
 
 }
 
@@ -54,12 +54,13 @@ class MemoryBlock {
         this.frontCSS = "block-front block-face";
         this.backCSS = "block-back block-face";
         this.imgCSS = "block-value";
-        
+
     }
 }
 
 function startTimer(duration, display) {
-    var timer = 60 * duration, minutes, seconds;
+    var timer = 60 * duration,
+        minutes, seconds;
     countdown = setInterval(() => {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
@@ -77,8 +78,7 @@ class gameInfo {
         this.cardsArray = cards;
         this.totalTime = totalTime;
         this.timeRemaining = totalTime;
-      //  this.timer = document.getElementById('time-remaining');
+        //  this.timer = document.getElementById('time-remaining');
         this.flips = 0;
     }
 }
-
